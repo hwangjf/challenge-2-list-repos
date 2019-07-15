@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./css/bootstrap.readable.css">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="icon" type="image/png" href="/images/favicon.png"/>
+        <script src="./scripts/app.js"></script>
     </head>
     <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -26,11 +27,11 @@
             <p>Look at my most recent github repos.</p>
         </div>
     </div>
-    <section class="container change-user hidden">
-        <form>
+    <section class="container change-user">
+        <form id="github-username-search-form" >
             <div class="form-group">
                 <label for="username">Username:</label>
-                <input class="form-control input-lg" type="text" placeholder="code-corgi">
+                <input id="github-username-input" class="form-control input-lg" type="text" placeholder="code-corgi">
                 <p class="help-text">Select a different user to see their repos.</p>
             </div>
             <div class="form-group">
@@ -41,7 +42,7 @@
     <section class="container">
         <header>
             <h2>Showing repos from
-                <a href="https://github.com/code-corgi/">code-corgi</a>
+                <a id="github-url" href="https://github.com/code-corgi/">code-corgi</a>
             </h2>
         </header>
         <main class="repo-list">
@@ -78,6 +79,5 @@
             <p>&copy; Ainur 2017</p>
         </footer>
     </section>        
-    <script src="./scripts/app.js"></script>
     </body>
 </html>
