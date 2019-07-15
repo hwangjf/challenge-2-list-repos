@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   githubUsernameSearchForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    console.log('afjl;sdf')
     const githubUsername = githubUsernameInput.value
     console.log(githubUsername)
 
